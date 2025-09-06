@@ -33,3 +33,12 @@ while (running) {
 
   console.log(typeof guess, guess);
 }
+
+const resultH1 = document.getElementById("resultH1");
+
+function getUsername() {
+  let res = prompt("Enter your name?");
+  resultH1.textContent = `Hello, Ikromboy's friend ${res}`;
+}
+
+getUsername();
